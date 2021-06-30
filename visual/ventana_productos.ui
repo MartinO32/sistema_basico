@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>productos</class>
+ <widget class="QDialog" name="productos">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>318</width>
+    <height>403</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Productos</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>imagen/logo.png</normaloff>imagen/logo.png</iconset>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="18" column="2">
+    <widget class="QPushButton" name="btn_precio_venta">
+     <property name="toolTip">
+      <string>Calcular precio de venta</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>imagen/calculadora.png</normaloff>imagen/calculadora.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1" colspan="2">
+    <widget class="QLineEdit" name="id_producto">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="16" column="0">
+    <widget class="QLabel" name="label_8">
+     <property name="text">
+      <string>Stock*</string>
+     </property>
+    </widget>
+   </item>
+   <item row="15" column="1" colspan="2">
+    <widget class="QLineEdit" name="codigo"/>
+   </item>
+   <item row="16" column="1" colspan="2">
+    <widget class="QLineEdit" name="stock"/>
+   </item>
+   <item row="7" column="2">
+    <widget class="QPushButton" name="agregar_rubro">
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="toolTip">
+      <string>Crear nuevo contacto</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>imagen/signo_mas.png</normaloff>imagen/signo_mas.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="0">
+    <widget class="QLabel" name="label_11">
+     <property name="text">
+      <string>Sub-Rubro</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QLineEdit" name="proveedor"/>
+   </item>
+   <item row="15" column="0">
+    <widget class="QLabel" name="label_7">
+     <property name="text">
+      <string>Código de
+Proveedor</string>
+     </property>
+    </widget>
+   </item>
+   <item row="19" column="0" colspan="3">
+    <widget class="QLabel" name="label_10">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>*DATOS OBLIGATORIOS</string>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="1" colspan="2">
+    <widget class="QLineEdit" name="marca"/>
+   </item>
+   <item row="18" column="0">
+    <widget class="QLabel" name="label_6">
+     <property name="text">
+      <string>Precio de
+venta*</string>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="0">
+    <widget class="QLabel" name="label_3">
+     <property name="text">
+      <string>Marca*</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2">
+    <widget class="QPushButton" name="nuevo_contacto">
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="toolTip">
+      <string>Crear nuevo contacto</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>imagen/signo_mas.png</normaloff>imagen/signo_mas.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="17" column="1" colspan="2">
+    <widget class="QLineEdit" name="costo"/>
+   </item>
+   <item row="20" column="0" colspan="3">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="guardar">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="toolTip">
+        <string>Guardar</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>imagen/guardar.png</normaloff>imagen/guardar.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>40</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="eliminar">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="toolTip">
+        <string>Eliminar</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>imagen/eliminar.png</normaloff>imagen/eliminar.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>40</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="limpiar">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="toolTip">
+        <string>Limpiar pantalla</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>imagen/limpiar.png</normaloff>imagen/limpiar.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>40</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="7" column="0">
+    <widget class="QLabel" name="label_4">
+     <property name="text">
+      <string>Rubro</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>Código de
+producto</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="2">
+    <widget class="QPushButton" name="agregar_subrubro">
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="toolTip">
+      <string>Crear nuevo contacto</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>imagen/signo_mas.png</normaloff>imagen/signo_mas.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="14" column="0">
+    <widget class="QLabel" name="label_5">
+     <property name="text">
+      <string>Descripción*</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>Proveedor*</string>
+     </property>
+    </widget>
+   </item>
+   <item row="18" column="1">
+    <widget class="QLineEdit" name="precio_venta"/>
+   </item>
+   <item row="14" column="1" colspan="2">
+    <widget class="QLineEdit" name="descripcion"/>
+   </item>
+   <item row="17" column="0">
+    <widget class="QLabel" name="label_9">
+     <property name="text">
+      <string>Costo*</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="1">
+    <widget class="QLineEdit" name="rubro"/>
+   </item>
+   <item row="8" column="1">
+    <widget class="QLineEdit" name="subrubro"/>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>id_producto</tabstop>
+  <tabstop>proveedor</tabstop>
+  <tabstop>nuevo_contacto</tabstop>
+  <tabstop>marca</tabstop>
+  <tabstop>descripcion</tabstop>
+  <tabstop>codigo</tabstop>
+  <tabstop>stock</tabstop>
+  <tabstop>costo</tabstop>
+  <tabstop>precio_venta</tabstop>
+  <tabstop>btn_precio_venta</tabstop>
+  <tabstop>guardar</tabstop>
+  <tabstop>eliminar</tabstop>
+  <tabstop>limpiar</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
