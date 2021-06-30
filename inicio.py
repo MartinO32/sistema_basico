@@ -25,7 +25,7 @@ import socket
 
 
 #Inicio de ventanas
-class Inicio (QMainWindow): #Puede ser ()QMainWindow, QWidget
+class Inicio (QMainWindow):
 	def __init__(self, parent=None):
 		super(Inicio, self).__init__(parent)
 		loadUi('visual/ventana_inicio.ui', self) #Abrir archivo UI 
